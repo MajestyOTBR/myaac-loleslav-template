@@ -120,6 +120,18 @@ defined('MYAAC') or die('Direct access not allowed!');
 					</center>
 			</div>
 		</div>
+        <?php
+        if($config['template_allow_change']):
+        ?>
+        <div id="box6" class="box-style2">
+            <h2 class="title" style="text-align: center">Template</h2>
+            <div style="text-align: center;">
+			<?= template_form() ?>
+            </div>
+        </div>
+        <?php
+        endif;
+        ?>
 	</div>
 </div>
 
